@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2023-07-29T08:08:58.728">
+    version="6.21.0" timestamp="2023-07-29T08:16:52.259">
 <file name="/Users/bonham36/School/CS 350/Group Project/TestProject/thursday-4-website/src/main/java/edu/odu/cs/cs350/HTMLDocumentBuilder.java">
 <violation beginline="35" endline="35" begincolumn="28" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDocumentBuilder" variable="images" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
