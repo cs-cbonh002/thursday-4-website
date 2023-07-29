@@ -229,7 +229,7 @@ task workTree(dependsOn: ['clearPages']) {
 }
 
 task copyReportsForWebsite (type: Copy, dependsOn: ['reports', 'workTree']) {
-    from 'build/reports'
+    from 'build/jbake'
     into pagesDir
 }
 
