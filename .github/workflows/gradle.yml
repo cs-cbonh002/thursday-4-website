@@ -30,4 +30,4 @@ jobs:
             git config --global user.email "cbonh002@odu.edu" 
             git config --global user.name "Project Actions"
             ./gradlew bake 
-             
+            ./deployReports
