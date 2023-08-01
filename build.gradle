@@ -12,6 +12,7 @@ plugins {
     id "project-report"
 
     id "org.jbake.site" version "5.5.0"
+	id 'edu.odu.cs.report_accumulator' version '1.4' 
 
 
    	
@@ -117,6 +118,13 @@ tasks.withType(Checkstyle) {
 
 checkstyleTest {
     enabled = false
+}
+
+reportStats {
+    reportsURL = 'https://project/reports/url/'
+    htmlSourceDir = file('src/main/jbake')  // default value
+    reportsDir = file('build/reports') // default value
+    buildID = "12345"                  // defaults to current date, but can be any run identifier
 }
 
 //------------------------------------------------------------------------------
