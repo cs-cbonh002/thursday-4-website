@@ -48,12 +48,13 @@ outgoingVariants - Displays the outgoing variants of root project 'thursday-4-we
 projects - Displays the sub-projects of root project 'thursday-4-website'.
 properties - Displays the properties of root project 'thursday-4-website'.
 resolvableConfigurations - Displays the configurations that can be resolved in root project 'thursday-4-website'.
-tasks - Displays the tasks runnable from root project 'thursday-4-website'.
+tasks - Displays the tasks runnable from root project 'thursday-4-website' (some of the displayed tasks may belong to subprojects).
 
 Reporting tasks
 ---------------
 deployReports - Commit and push website changes to GitHub
 projectReport - Generates a report about your project.
+reportStats - Collect summary statistics from analysis tools.
 
 Verification tasks
 ------------------
