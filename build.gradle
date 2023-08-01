@@ -137,8 +137,7 @@ task reports(dependsOn: [
     "javadoc",
     "check",
     "spotbugsMain",
-    "projectReport",
-    "reportStats"])
+    "projectReport"])
 {
     description "Generate all reports and documentation for this project."
 }
