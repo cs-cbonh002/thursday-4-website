@@ -137,7 +137,8 @@ task reports(dependsOn: [
     "javadoc",
     "check",
     "spotbugsMain",
-    "projectReport"])
+    "projectReport",
+    "reportStats"])
 {
     description "Generate all reports and documentation for this project."
 }
@@ -236,7 +237,7 @@ task workTree(dependsOn: ['clearPages']) {
     }
 }
 
-task copyReportsForWebsite (type: Copy, dependsOn: ['reports', 'workTree']) {
+task copyReportsForWebsite (type: Copy, dependsOn: ['reports', 'workTree', 'bake']) {
     from 'build/jbake'
     into pagesDir
 }
