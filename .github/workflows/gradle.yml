@@ -26,7 +26,7 @@ jobs:
         - name: Deploy reports using an SSH agent
           run: |
             eval $(ssh-agent -s -t 600) 
-            ssh-add <(echo "${ secrets.REPORTS_SSH_KEY }" | base64 --decode | tr -d "\r")
+            ssh-add <(echo "${{ secrets.REPORTS_SSH_KEY }}")
             git config --global user.email "cbonh002@odu.edu" 
             git config --global user.name "Project Actions"
             ./gradlew bake 
